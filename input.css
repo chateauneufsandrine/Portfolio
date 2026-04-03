@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+
+.font-amatic-sc{
+    font-family: "Amatic SC", sans-serif;
+}
+
+.font-geist {
+    font-family: "Geist", sans-serif;
+}
+
+.bg-vert-pomme{
+    background-color: #ACBEA3;
+}
+.text-vert-pomme{
+    color: #ACBEA3;
+}
+
