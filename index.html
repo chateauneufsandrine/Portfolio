@@ -1,58 +1,51 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sandrine Chateauneuf — Développeuse Web</title>
 
-    <!-- Geist et Geist Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Geist:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- GSAP ICI!/////////////////////////////////////////////////////////// -->
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <link rel="stylesheet" href="style.css" />
     <script src="./main.js" defer></script>
-
-    <!-- GASAP à la fin normalement de BODY//////////////////////////////////// -->
-
-    <script src="timeline.js" defer></script>
+    <script src="./timeline.js" defer></script>
   </head>
 
   <body class="font-geist">
-    <!-- ////////////////////////////////////////NAVBAR -->
+    <!-- ── NAVBAR ─────────────────────────────────── -->
     <header
       class="fixed top-16 left-16 right-16 z-50 shadow-xl bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30"
     >
-      <nav class="flex-row px-16 py-4 flex justify-between items-center">
-        <a href="#" class="hover:opacity-80 text-4xl font-amatic-sc font-bold"
-          >SANDRINE <br />CHATEAUNEUF
-          <hr class="text-black h-4"
-        /></a>
-
-        <div class="flex items-center gap-9 text-black text-sm">
-          <a href="#" class="hover:opacity-80 text-xl">A propos</a>
+      <nav class="flex justify-between items-center px-16 py-4">
+        <a
+          href="#"
+          class="hover:opacity-80 text-4xl font-amatic-sc font-bold leading-tight"
+        >
+          SANDRINE<br />CHATEAUNEUF
+        </a>
+        <div class="flex items-center gap-9 text-sm">
+          <a href="#" class="hover:opacity-80 text-xl">À propos</a>
           <a href="#" class="hover:opacity-80 text-xl">Portfolio</a>
           <a
             href="#"
             class="bg-[#D30C7B] px-8 py-4 rounded-md text-xl text-white hover:bg-[#E2294F]"
+            >Contact</a
           >
-            <!-- <a href="#" class="bg-[#F18F01] px-4 py-1 rounded-md text-xl"> -->
-
-            Contact
-          </a>
         </div>
       </nav>
     </header>
 
     <main>
-      <!-- HERO////////////////////////////////////// -->
-
+      <!-- ── HERO ───────────────────────────────────── -->
       <section
         class="w-full h-screen bg-[url(./assets/images/yifei-liu-nRvwpCrw5Ks-unsplash.jpg)] bg-cover flex flex-col justify-between items-center pb-54 px-16 pt-40 gap-8"
       >
@@ -62,13 +55,8 @@
           <h1
             class="text-8xl font-black text-center text-[#D30C7B] text-shadow-lg/20 font-amatic-sc backdrop-blur-xs pt-8"
           >
-            <!-- <h1
-            class="text-8xl font-black text-center text-[#E2294F] text-shadow-lg/20 
-            font-amatic-sc backdrop-blur-xs pt-8"
-          > -->
             Cartographiant l'avenir par le code
           </h1>
-
           <h2 class="text-5xl text-center text-white text-shadow-md">
             Développeuse Web en formation
           </h2>
@@ -77,68 +65,53 @@
           </h3>
         </div>
 
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 items-center">
           <div
-            class="font-amatic-sc text-shadow-lg/20 text-3xl text-white font-black items-center justify-center flex flex-col animate-bounce"
+            class="font-amatic-sc text-shadow-lg/20 text-3xl text-white font-black flex flex-col items-center justify-center animate-bounce"
           >
             En savoir plus
-
             <img
               src="./assets/images/arrow-down-removebg-preview.png"
               alt=""
-              class="w-8 flex justify-center"
+              class="w-8"
             />
           </div>
-
           <a
             href=""
             class="bg-[#D30C7B] px-8 py-4 rounded-md text-xl text-white font-semibold hover:bg-[#E2294F]"
+            >Projets</a
           >
-            Projets
-          </a>
         </div>
 
         <div
-          class="flex gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center text-white items-center text-xl"
+          class="flex gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-white items-center text-xl"
         >
-          <img src="./assets/images/compass-arrows.png" alt="" class="w-16" />
+          <img
+            src="./assets/images/compass-arrows.png"
+            alt="Boussole"
+            class="w-16"
+          />
           <a
-            href="https://www.openstreetmap.org/?mlat=45.4397&mlon=4.3872#map=15/45.4397/4.3872"
+            href="https://www.openstreetmap.org/?mlat=45.4397&amp;mlon=4.3872#map=15/45.4397/4.3872"
             target="_blank"
           >
-            45.4397° N, 4.3872° E <br />
-            <p class="text-black text-sm">Saint-Etienne, France</p>
+            45.4397° N, 4.3872° E<br />
+            <span class="text-black text-sm">Saint-Étienne, France</span>
           </a>
         </div>
       </section>
-      <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
-      <!-- <div class="filtreBackground"></div>
-      <div class="case w-3xs sm:w-96">
-        
-        <nav class="text-2xl flex flex-col p-3 gap-4">
-          <a href="">EXPERTISES</a>
-          <a href="">BESOINS </a>
-          <a href="">ESPACES SENSORIELS</a>
-          <a href="">MOTRICITE </a>
-          <a href="">LANGAGES ET COMMUNICATION </a>
-          <a href="">APPRENTISSAGS </a>
-        </nav>
-      </div> -->
 
-      <!-- //////////////////A PROPOS/////////////////////////////////////////////////////// -->
-
-      <!-- <section class=""> -->
+      <!-- ── À PROPOS ───────────────────────────────── -->
       <section class="flex flex-col py-26 px-36 gap-12 bg-[#684551]">
         <div class="flex flex-row gap-12">
           <img
             src="./assets/images/PORTR_20260228_CHATEAUNEUFSandrine_Linkedin-CV_140.JPG"
-            alt=""
+            alt="Portrait de Sandrine Chateauneuf"
             class="rounded-md border border-pink-700 w-1/2 h-auto"
           />
-
           <div class="text-white flex flex-col gap-15 w-1/2">
             <h2 class="text-8xl font-amatic-sc font-bold">
-              Salut, <br />je m'appelle <br />Sandrine
+              Salut,<br />je m'appelle<br />Sandrine
             </h2>
             <h3 class="text-5xl font-amatic-sc">
               Développeuse Full Stack en formation DWWM, Bac+2
@@ -146,10 +119,6 @@
             <hr
               class="h-1 w-1/2 mx-auto bg-pink-700 rounded-full border-none outline-none shadow-[0_0_10px_#be185d,0_0_20px_#be185d,0_0_40px_#be185d]"
             />
-
-            <!-- <img src="./images/1774878775863.jpg" alt="" class="w-48"> -->
-            <!-- text-orange-400 drop-shadow-[0_0_8px_rgba(190,24,93,0.8)]" -->
-
             <p class="text-2xl text-white">
               En pleine reconversion professionnelle, j'ai choisi de me
               réorienter vers ce qui me passionne vraiment : la Géomatique et
@@ -160,24 +129,17 @@
               idéalement en alternance — pour me spécialiser pleinement dans ce
               domaine.
             </p>
-
             <div class="flex flex-col gap-2 items-center">
               <div
-                class="font-amatic-sc text-shadow-lg/20 text-3xl text-pink-600 font-black items-center justify-center flex flex-col animate-bounce"
+                class="font-amatic-sc text-shadow-lg/20 text-3xl text-pink-600 font-black flex flex-col items-center justify-center animate-bounce"
               >
-                A propos
-
-                <img
-                  src="./assets/images/arrow-down.png"
-                  alt=""
-                  class="w-8 flex justify-center"
-                />
+                À propos
+                <img src="./assets/images/arrow-down.png" alt="" class="w-8" />
               </div>
-
               <a
                 href="./assets/cv/CV_2026-04-01_SANDRINE_CHATEAUNEUF.pdf"
                 target="_blank"
-                class="flex gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-pink-700 text-center text-white items-center text-xl hover:bg-[#D30C7B]"
+                class="flex gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-pink-700 text-white items-center text-xl hover:bg-[#D30C7B]"
               >
                 CV.Alternance_SIG
               </a>
@@ -189,12 +151,11 @@
       <!-- ═══════════════ FRISE CHRONOLOGIQUE ═══════════════ -->
       <section
         id="tl-section"
-        class="overflow-hidden relative"
-        style="background: #1e0f18"
+        class="relative overflow-hidden bg-[#1e0f18] h-screen flex flex-col"
       >
-        <!-- Fond pointillé décoratif -->
+        <!-- Fond décoratif pointillé -->
         <div
-          class="absolute inset-0 pointer-events-none"
+          class="absolute inset-0 pointer-events-none z-0"
           style="
             background-image: radial-gradient(
               circle,
@@ -202,11 +163,10 @@
               transparent 1px
             );
             background-size: 32px 32px;
-            z-index: 0;
           "
         ></div>
         <div
-          class="absolute pointer-events-none"
+          class="absolute pointer-events-none z-0"
           style="
             top: -120px;
             left: 30%;
@@ -217,18 +177,15 @@
               rgba(211, 12, 123, 0.08) 0%,
               transparent 70%
             );
-            z-index: 0;
           "
         ></div>
 
         <!-- En-tête -->
-        <div class="relative z-10 px-14 pt-14">
+        <div class="relative z-10 px-14 pt-10 shrink-0">
           <div
-            class="absolute pointer-events-none select-none"
+            class="absolute pointer-events-none select-none font-amatic-sc font-bold"
             style="
-              font-family: &quot;Amatic SC&quot;, cursive;
               font-size: 200px;
-              font-weight: 700;
               color: rgba(211, 12, 123, 0.05);
               top: -20px;
               right: 40px;
@@ -237,179 +194,68 @@
           >
             2026
           </div>
-
           <p
-            class="flex items-center gap-3 mb-3"
-            style="
-              font-size: 10px;
-              letter-spacing: 3px;
-              text-transform: uppercase;
-              color: rgba(211, 12, 123, 0.7);
-            "
+            class="flex items-center gap-3 mb-3 text-[10px] tracking-[3px] uppercase text-[#d30c7b]/70"
           >
-            <span
-              style="
-                width: 24px;
-                height: 1px;
-                background: #d30c7b;
-                display: inline-block;
-              "
-            ></span>
+            <span class="w-6 h-px bg-[#d30c7b] inline-block"></span>
             Parcours professionnel
           </p>
           <h2
-            class="font-amatic-sc font-bold text-white"
-            style="font-size: 80px; line-height: 0.9"
+            class="font-amatic-sc font-bold text-white text-[80px] leading-[0.9]"
           >
-            Mon<br /><span style="color: #d30c7b">histoire</span>
+            Mon<br /><span class="text-[#d30c7b]">histoire</span>
           </h2>
           <p
-            style="
-              font-size: 12px;
-              font-weight: 200;
-              color: rgba(255, 255, 255, 0.3);
-              letter-spacing: 3px;
-              text-transform: uppercase;
-              margin-top: 12px;
-            "
+            class="text-[12px] font-light text-white/30 tracking-[3px] uppercase mt-3"
           >
             De soignante à développeuse · Saint-Étienne
           </p>
-
-          <!-- Indicateur de scroll -->
-          <div class="flex items-center gap-3 mt-6" style="margin-bottom: 0">
-            <span
-              style="
-                font-size: 11px;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                color: rgba(255, 255, 255, 0.25);
-              "
+          <div class="flex items-center gap-3 mt-6">
+            <span class="text-[11px] tracking-[2px] uppercase text-white/25"
               >Explorer</span
             >
             <div
-              style="
-                height: 1px;
-                width: 80px;
-                background: rgba(211, 12, 123, 0.2);
-                position: relative;
-                overflow: hidden;
-              "
+              class="h-px w-20 relative overflow-hidden bg-[rgba(211,12,123,0.2)]"
             >
               <div
                 id="tl-cursor"
-                style="
-                  position: absolute;
-                  left: -40%;
-                  top: 0;
-                  height: 100%;
-                  width: 40%;
-                  background: #d30c7b;
-                "
+                class="absolute top-0 h-full w-[40%] bg-[#d30c7b]"
+                style="left: -40%"
               ></div>
             </div>
           </div>
         </div>
 
-        <div style="height: 32px"></div>
+        <div class="h-4 shrink-0"></div>
 
-        <!-- ═══ PISTE DE LA FRISE ═══ -->
-        <div
-          id="tl-wrap"
-          class="relative z-10"
-          style="
-            overflow-x: auto;
-            overflow-y: visible;
-            cursor: grab;
-            padding: 0 56px 50px;
-            scrollbar-width: none;
-          "
-        >
-          <div
-            id="tl-track"
-            style="
-              display: flex;
-              align-items: center;
-              width: max-content;
-              position: relative;
-              min-height: 540px;
-            "
-          >
-            <!-- Axe central -->
+        <!-- PISTE -->
+        <div id="tl-wrap" class="relative z-10 flex-1 overflow-hidden px-14">
+          <div id="tl-track" class="flex items-center w-max relative h-full">
+            <!-- Axe fond -->
             <div
-              style="
-                position: absolute;
-                top: 50%;
-                left: 0;
-                width: 100%;
-                height: 1px;
-                background: linear-gradient(
-                  90deg,
-                  transparent,
-                  rgba(211, 12, 123, 0.2) 5%,
-                  rgba(211, 12, 123, 0.2) 95%,
-                  transparent
-                );
-                transform: translateY(-0.5px);
-                pointer-events: none;
-              "
+              class="absolute top-1/2 -translate-y-1/2 left-0 w-full h-px pointer-events-none bg-[rgba(211,12,123,0.08)]"
             ></div>
 
-            <div style="width: 52px; flex-shrink: 0"></div>
+            <div class="w-20 shrink-0"></div>
 
-            <!-- ─── ÉTAPE 1 — EN BAS ─── -->
+            <!-- 2012 · Diplôme DEAS · AU-DESSUS -->
             <div
-              class="tl-node"
-              style="
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                flex-shrink: 0;
-              "
+              class="tl-node flex items-center shrink-0"
+              style="flex-direction: column-reverse"
             >
               <div
-                style="
-                  width: 1px;
-                  height: 60px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.5),
-                    rgba(211, 12, 123, 0.1)
-                  );
-                "
+                class="w-px h-5 bg-gradient-to-b from-[#d30c7b]/50 to-[#d30c7b]/10"
               ></div>
               <div
-                class="tl-dot"
-                style="
-                  width: 12px;
-                  height: 12px;
-                  border-radius: 50%;
-                  background: #d30c7b;
-                  box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.2);
-                  transition: all 0.3s;
-                  z-index: 4;
-                  flex-shrink: 0;
-                "
+                class="tl-dot size-3 rounded-full bg-[#d30c7b] shrink-0"
+                style="box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.25)"
               ></div>
               <div
-                style="
-                  width: 1px;
-                  height: 40px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.1),
-                    rgba(211, 12, 123, 0.5)
-                  );
-                "
+                class="w-px h-20 bg-gradient-to-b from-[#d30c7b]/10 to-[#d30c7b]/50"
               ></div>
               <div
-                class="tl-card"
+                class="tl-card w-52 rounded-[20px] p-5 border border-white/[0.08] bg-white/[0.04] relative overflow-hidden"
                 style="
-                  width: 230px;
-                  border-radius: 20px;
-                  padding: 24px 22px 20px;
-                  border: 1px solid rgba(255, 255, 255, 0.08);
-                  background: rgba(255, 255, 255, 0.04);
-                  position: relative;
-                  overflow: hidden;
                   transition:
                     transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
                     border-color 0.3s,
@@ -417,46 +263,92 @@
                 "
               >
                 <div
-                  style="
-                    position: absolute;
-                    inset: 0;
-                    border-radius: 20px;
-                    background: linear-gradient(
-                      135deg,
-                      rgba(255, 255, 255, 0.04),
-                      transparent 50%
-                    );
-                    pointer-events: none;
-                  "
+                  class="absolute inset-0 rounded-[20px] bg-gradient-to-br from-white/[0.04] to-transparent pointer-events-none"
                 ></div>
                 <div
-                  style="
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 2px;
-                    border-radius: 0 0 20px 20px;
-                    background: #d30c7b;
-                    transform: scaleX(0);
-                    transform-origin: left;
-                    transition: transform 0.35s ease;
-                  "
-                  class="tl-accent"
+                  class="tl-accent absolute bottom-0 left-0 right-0 h-0.5 rounded-b-[20px] bg-[#d30c7b] origin-left"
+                  style="transform: scaleX(0); transition: transform 0.35s ease"
                 ></div>
                 <div
-                  class="tl-icon"
-                  style="
-                    width: 32px;
-                    height: 32px;
-                    border-radius: 10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: rgba(211, 12, 123, 0.1);
-                    border: 1px solid rgba(211, 12, 123, 0.18);
-                    margin-bottom: 14px;
-                  "
+                  class="tl-icon size-8 rounded-xl flex items-center justify-center bg-[#d30c7b]/10 border border-[#d30c7b]/[0.18] mb-3.5"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#D30C7B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  >
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="font-amatic-sc font-bold text-[48px] text-[#d30c7b] leading-none"
+                >
+                  2012
+                </div>
+                <div
+                  class="text-[9px] font-bold tracking-[2px] uppercase text-white/30 border border-white/10 px-2 py-0.5 rounded inline-block mt-1.5 mb-2.5"
+                >
+                  Formation · 1 an
+                </div>
+                <div
+                  class="font-amatic-sc font-bold text-white text-[28px] leading-none"
+                >
+                  Diplôme DEAS
+                </div>
+                <p
+                  class="text-[11.5px] font-light text-white/45 leading-relaxed mt-2"
+                >
+                  Obtention du Diplôme d'État d'Aide-Soignante. Naissance d'une
+                  vocation pour l'humain et le soin.
+                </p>
+                <span
+                  class="inline-block mt-3 text-[9px] font-bold tracking-[1px] px-2.5 py-1 rounded-full bg-[#d30c7b]/10 text-[#d30c7b] border border-[#d30c7b]/25"
+                  >IFAS · Saint-Étienne</span
+                >
+              </div>
+            </div>
+
+            <div class="w-[350px] shrink-0"></div>
+
+            <!-- 2014 · Aide-soignante · EN-DESSOUS -->
+            <div
+              class="tl-node flex items-center shrink-0"
+              style="flex-direction: column"
+            >
+              <div
+                class="w-px h-14 bg-gradient-to-b from-[#d30c7b]/50 to-[#d30c7b]/10"
+              ></div>
+              <div
+                class="tl-dot size-3 rounded-full bg-[#d30c7b] shrink-0"
+                style="box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.25)"
+              ></div>
+              <div
+                class="w-px h-10 bg-gradient-to-b from-[#d30c7b]/10 to-[#d30c7b]/50"
+              ></div>
+              <div
+                class="tl-card w-56 rounded-[20px] p-5 border border-white/[0.08] bg-white/[0.04] relative overflow-hidden"
+                style="
+                  transition:
+                    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                    border-color 0.3s,
+                    box-shadow 0.3s;
+                "
+              >
+                <div
+                  class="absolute inset-0 rounded-[20px] bg-gradient-to-br from-white/[0.04] to-transparent pointer-events-none"
+                ></div>
+                <div
+                  class="tl-accent absolute bottom-0 left-0 right-0 h-0.5 rounded-b-[20px] bg-[#d30c7b] origin-left"
+                  style="transform: scaleX(0); transition: transform 0.35s ease"
+                ></div>
+                <div
+                  class="tl-icon size-8 rounded-xl flex items-center justify-center bg-[#d30c7b]/10 border border-[#d30c7b]/[0.18] mb-3.5"
                 >
                   <svg
                     width="14"
@@ -471,118 +363,53 @@
                   </svg>
                 </div>
                 <div
-                  class="font-amatic-sc font-bold"
-                  style="font-size: 48px; color: #d30c7b; line-height: 1"
+                  class="font-amatic-sc font-bold text-[48px] text-[#d30c7b] leading-none"
                 >
                   2014
                 </div>
                 <div
-                  style="
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 2px;
-                    text-transform: uppercase;
-                    color: rgba(255, 255, 255, 0.3);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
-                    padding: 3px 8px;
-                    border-radius: 3px;
-                    display: inline-block;
-                    margin: 6px 0 10px;
-                  "
+                  class="text-[9px] font-bold tracking-[2px] uppercase text-white/30 border border-white/10 px-2 py-0.5 rounded inline-block mt-1.5 mb-2.5"
                 >
                   Expérience · 10 ans
                 </div>
                 <div
-                  class="font-amatic-sc font-bold text-white"
-                  style="font-size: 30px; line-height: 1"
+                  class="font-amatic-sc font-bold text-white text-[28px] leading-none"
                 >
                   Aide-soignante
                 </div>
                 <p
-                  style="
-                    font-size: 11.5px;
-                    font-weight: 300;
-                    color: rgba(255, 255, 255, 0.45);
-                    line-height: 1.65;
-                    margin-top: 8px;
-                  "
+                  class="text-[11.5px] font-light text-white/45 leading-relaxed mt-2"
                 >
                   Secteur médico-social. Gestion de patients, travail d'équipe
                   et résilience au quotidien pendant une décennie.
                 </p>
                 <span
-                  style="
-                    display: inline-block;
-                    margin-top: 12px;
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                    padding: 4px 10px;
-                    border-radius: 20px;
-                    background: rgba(211, 12, 123, 0.12);
-                    color: rgba(211, 12, 123, 0.9);
-                    border: 1px solid rgba(211, 12, 123, 0.25);
-                  "
+                  class="inline-block mt-3 text-[9px] font-bold tracking-[1px] px-2.5 py-1 rounded-full bg-[#d30c7b]/10 text-[#d30c7b] border border-[#d30c7b]/25"
                   >CHU · Médico-social</span
                 >
               </div>
             </div>
 
-            <div style="width: 56px; flex-shrink: 0"></div>
+            <div class="w-[350px] shrink-0"></div>
 
-            <!-- ─── ÉTAPE 2 — EN HAUT ─── -->
+            <!-- 2019 · Coordinatrice · AU-DESSUS -->
             <div
-              class="tl-node"
-              style="
-                display: flex;
-                flex-direction: column-reverse;
-                align-items: center;
-                flex-shrink: 0;
-              "
+              class="tl-node flex items-center shrink-0"
+              style="flex-direction: column-reverse"
             >
               <div
-                style="
-                  width: 1px;
-                  height: 20px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.5),
-                    rgba(211, 12, 123, 0.1)
-                  );
-                "
+                class="w-px h-5 bg-gradient-to-b from-[#d30c7b]/50 to-[#d30c7b]/10"
               ></div>
               <div
-                class="tl-dot"
-                style="
-                  width: 12px;
-                  height: 12px;
-                  border-radius: 50%;
-                  background: #d30c7b;
-                  box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.2);
-                  transition: all 0.3s;
-                  z-index: 4;
-                  flex-shrink: 0;
-                "
+                class="tl-dot size-3 rounded-full bg-[#d30c7b] shrink-0"
+                style="box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.25)"
               ></div>
               <div
-                style="
-                  width: 1px;
-                  height: 80px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.1),
-                    rgba(211, 12, 123, 0.5)
-                  );
-                "
+                class="w-px h-[90px] bg-gradient-to-b from-[#d30c7b]/10 to-[#d30c7b]/50"
               ></div>
               <div
-                class="tl-card"
+                class="tl-card w-52 rounded-[20px] p-5 border border-white/[0.08] bg-white/[0.04] relative overflow-hidden"
                 style="
-                  width: 195px;
-                  border-radius: 20px;
-                  padding: 24px 22px 20px;
-                  border: 1px solid rgba(255, 255, 255, 0.08);
-                  background: rgba(255, 255, 255, 0.04);
-                  position: relative;
-                  overflow: hidden;
                   transition:
                     transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
                     border-color 0.3s,
@@ -590,146 +417,139 @@
                 "
               >
                 <div
-                  style="
-                    position: absolute;
-                    inset: 0;
-                    border-radius: 20px;
-                    background: linear-gradient(
-                      135deg,
-                      rgba(255, 255, 255, 0.04),
-                      transparent 50%
-                    );
-                    pointer-events: none;
-                  "
+                  class="absolute inset-0 rounded-[20px] bg-gradient-to-br from-white/[0.04] to-transparent pointer-events-none"
                 ></div>
                 <div
-                  style="
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 2px;
-                    border-radius: 0 0 20px 20px;
-                    background: #d30c7b;
-                    transform: scaleX(0);
-                    transform-origin: left;
-                    transition: transform 0.35s ease;
-                  "
-                  class="tl-accent"
+                  class="tl-accent absolute bottom-0 left-0 right-0 h-0.5 rounded-b-[20px] bg-[#d30c7b] origin-left"
+                  style="transform: scaleX(0); transition: transform 0.35s ease"
                 ></div>
                 <div
-                  class="font-amatic-sc font-bold"
-                  style="font-size: 40px; color: #d30c7b; line-height: 1"
+                  class="tl-icon size-8 rounded-xl flex items-center justify-center bg-[#d30c7b]/10 border border-[#d30c7b]/[0.18] mb-3.5"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#D30C7B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  >
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </div>
+                <div
+                  class="font-amatic-sc font-bold text-[48px] text-[#d30c7b] leading-none"
+                >
+                  2019
+                </div>
+                <div
+                  class="text-[9px] font-bold tracking-[2px] uppercase text-white/30 border border-white/10 px-2 py-0.5 rounded inline-block mt-1.5 mb-2.5"
+                >
+                  5 ans · Leadership
+                </div>
+                <div
+                  class="font-amatic-sc font-bold text-white text-[28px] leading-none"
+                >
+                  Coordinatrice
+                </div>
+                <p
+                  class="text-[11.5px] font-light text-white/45 leading-relaxed mt-2"
+                >
+                  Référente en EHPAD. Management d'équipe pluridisciplinaire,
+                  bientraitance et organisation au quotidien.
+                </p>
+                <span
+                  class="inline-block mt-3 text-[9px] font-bold tracking-[1px] px-2.5 py-1 rounded-full bg-[#d30c7b]/10 text-[#d30c7b] border border-[#d30c7b]/25"
+                  >EHPAD · Équipe</span
+                >
+              </div>
+            </div>
+
+            <div class="w-[350px] shrink-0"></div>
+
+            <!-- 2022 · Premier code · EN-DESSOUS -->
+            <div
+              class="tl-node flex items-center shrink-0"
+              style="flex-direction: column"
+            >
+              <div
+                class="w-px h-5 bg-gradient-to-b from-[#d30c7b]/50 to-[#d30c7b]/10"
+              ></div>
+              <div
+                class="tl-dot size-3 rounded-full bg-[#d30c7b] shrink-0"
+                style="box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.25)"
+              ></div>
+              <div
+                class="w-px h-20 bg-gradient-to-b from-[#d30c7b]/10 to-[#d30c7b]/50"
+              ></div>
+              <div
+                class="tl-card w-48 rounded-[20px] p-5 border border-white/[0.08] bg-white/[0.04] relative overflow-hidden"
+                style="
+                  transition:
+                    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                    border-color 0.3s,
+                    box-shadow 0.3s;
+                "
+              >
+                <div
+                  class="absolute inset-0 rounded-[20px] bg-gradient-to-br from-white/[0.04] to-transparent pointer-events-none"
+                ></div>
+                <div
+                  class="tl-accent absolute bottom-0 left-0 right-0 h-0.5 rounded-b-[20px] bg-[#d30c7b] origin-left"
+                  style="transform: scaleX(0); transition: transform 0.35s ease"
+                ></div>
+                <div
+                  class="font-amatic-sc font-bold text-[40px] text-[#d30c7b] leading-none"
                 >
                   2022
                 </div>
                 <div
-                  style="
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 2px;
-                    text-transform: uppercase;
-                    color: rgba(255, 255, 255, 0.3);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
-                    padding: 3px 8px;
-                    border-radius: 3px;
-                    display: inline-block;
-                    margin: 6px 0 10px;
-                  "
+                  class="text-[9px] font-bold tracking-[2px] uppercase text-white/30 border border-white/10 px-2 py-0.5 rounded inline-block mt-1.5 mb-2.5"
                 >
                   Déclic
                 </div>
                 <div
-                  class="font-amatic-sc font-bold text-white"
-                  style="font-size: 26px; line-height: 1"
+                  class="font-amatic-sc font-bold text-white text-[26px] leading-none"
                 >
                   Premier code
                 </div>
                 <p
-                  style="
-                    font-size: 11.5px;
-                    font-weight: 300;
-                    color: rgba(255, 255, 255, 0.45);
-                    line-height: 1.65;
-                    margin-top: 8px;
-                  "
+                  class="text-[11.5px] font-light text-white/45 leading-relaxed mt-2"
                 >
-                  HTML & CSS en autodidacte. La révélation que le code, c'est
-                  construire des espaces.
+                  HTML &amp; CSS en autodidacte. La révélation que le code,
+                  c'est construire des espaces.
                 </p>
                 <span
-                  style="
-                    display: inline-block;
-                    margin-top: 12px;
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                    padding: 4px 10px;
-                    border-radius: 20px;
-                    background: rgba(211, 12, 123, 0.12);
-                    color: rgba(211, 12, 123, 0.9);
-                    border: 1px solid rgba(211, 12, 123, 0.25);
-                  "
+                  class="inline-block mt-3 text-[9px] font-bold tracking-[1px] px-2.5 py-1 rounded-full bg-[#d30c7b]/10 text-[#d30c7b] border border-[#d30c7b]/25"
                   >Autodidacte</span
                 >
               </div>
             </div>
 
-            <div style="width: 48px; flex-shrink: 0"></div>
+            <div class="w-[350px] shrink-0"></div>
 
-            <!-- ─── ÉTAPE 3 — EN BAS, FEATURED ─── -->
+            <!-- 2023 · JavaScript & CSS · AU-DESSUS -->
             <div
-              class="tl-node"
-              style="
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                flex-shrink: 0;
-              "
+              class="tl-node flex items-center shrink-0"
+              style="flex-direction: column-reverse"
             >
               <div
-                style="
-                  width: 1px;
-                  height: 30px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.5),
-                    rgba(211, 12, 123, 0.1)
-                  );
-                "
+                class="w-px h-5 bg-gradient-to-b from-[#d30c7b]/50 to-[#d30c7b]/10"
               ></div>
               <div
-                class="tl-dot"
-                style="
-                  width: 12px;
-                  height: 12px;
-                  border-radius: 50%;
-                  background: #d30c7b;
-                  box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.2);
-                  transition: all 0.3s;
-                  z-index: 4;
-                  flex-shrink: 0;
-                "
+                class="tl-dot size-3 rounded-full bg-[#d30c7b] shrink-0"
+                style="box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.25)"
               ></div>
               <div
-                style="
-                  width: 1px;
-                  height: 60px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.1),
-                    rgba(211, 12, 123, 0.5)
-                  );
-                "
+                class="w-px h-[90px] bg-gradient-to-b from-[#d30c7b]/10 to-[#d30c7b]/50"
               ></div>
               <div
-                class="tl-card"
+                class="tl-card w-52 rounded-[20px] p-5 border border-white/[0.08] bg-white/[0.04] relative overflow-hidden"
                 style="
-                  width: 280px;
-                  border-radius: 20px;
-                  padding: 24px 22px 20px;
-                  background: rgba(211, 12, 123, 0.06);
-                  border: 1px solid rgba(211, 12, 123, 0.2);
-                  position: relative;
-                  overflow: hidden;
                   transition:
                     transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
                     border-color 0.3s,
@@ -737,59 +557,99 @@
                 "
               >
                 <div
-                  style="
-                    position: absolute;
-                    inset: 0;
-                    border-radius: 20px;
-                    background: linear-gradient(
-                      135deg,
-                      rgba(255, 255, 255, 0.04),
-                      transparent 50%
-                    );
-                    pointer-events: none;
-                  "
+                  class="absolute inset-0 rounded-[20px] bg-gradient-to-br from-white/[0.04] to-transparent pointer-events-none"
                 ></div>
                 <div
-                  style="
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 2px;
-                    border-radius: 0 0 20px 20px;
-                    background: #d30c7b;
-                    transform: scaleX(0);
-                    transform-origin: left;
-                    transition: transform 0.35s ease;
-                  "
-                  class="tl-accent"
+                  class="tl-accent absolute bottom-0 left-0 right-0 h-0.5 rounded-b-[20px] bg-[#d30c7b] origin-left"
+                  style="transform: scaleX(0); transition: transform 0.35s ease"
                 ></div>
                 <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    margin-bottom: 4px;
-                  "
+                  class="tl-icon size-8 rounded-xl flex items-center justify-center bg-[#d30c7b]/10 border border-[#d30c7b]/[0.18] mb-3.5"
                 >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#D30C7B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  >
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <div
+                  class="font-amatic-sc font-bold text-[48px] text-[#d30c7b] leading-none"
+                >
+                  2023
+                </div>
+                <div
+                  class="text-[9px] font-bold tracking-[2px] uppercase text-white/30 border border-white/10 px-2 py-0.5 rounded inline-block mt-1.5 mb-2.5"
+                >
+                  Passion · JS
+                </div>
+                <div
+                  class="font-amatic-sc font-bold text-white text-[28px] leading-none"
+                >
+                  JavaScript &amp; CSS
+                </div>
+                <p
+                  class="text-[11.5px] font-light text-white/45 leading-relaxed mt-2"
+                >
+                  Animations, interactions, composants dynamiques. La magie du
+                  front-end prend forme.
+                </p>
+                <span
+                  class="inline-block mt-3 text-[9px] font-bold tracking-[1px] px-2.5 py-1 rounded-full bg-[#d30c7b]/10 text-[#d30c7b] border border-[#d30c7b]/25"
+                  >Flexbox · GSAP · Vanilla JS</span
+                >
+              </div>
+            </div>
+
+            <div class="w-[350px] shrink-0"></div>
+
+            <!-- 2024 · Garage404/ · EN-DESSOUS · FEATURED -->
+            <div
+              class="tl-node flex items-center shrink-0"
+              style="flex-direction: column"
+            >
+              <div
+                class="w-px h-8 bg-gradient-to-b from-[#d30c7b]/60 to-[#d30c7b]/10"
+              ></div>
+              <div
+                class="tl-dot size-3 rounded-full bg-[#d30c7b] shrink-0"
+                style="box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.3)"
+              ></div>
+              <div
+                class="w-px h-14 bg-gradient-to-b from-[#d30c7b]/10 to-[#d30c7b]/60"
+              ></div>
+              <div
+                class="tl-card w-64 rounded-[20px] p-5 border border-[#d30c7b]/20 relative overflow-hidden"
+                style="
+                  background: rgba(211, 12, 123, 0.06);
+                  transition:
+                    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                    border-color 0.3s,
+                    box-shadow 0.3s;
+                "
+              >
+                <div
+                  class="absolute inset-0 rounded-[20px] bg-gradient-to-br from-white/[0.04] to-transparent pointer-events-none"
+                ></div>
+                <div
+                  class="tl-accent absolute bottom-0 left-0 right-0 h-0.5 rounded-b-[20px] bg-[#d30c7b] origin-left"
+                  style="transform: scaleX(0); transition: transform 0.35s ease"
+                ></div>
+                <div class="flex items-center justify-between mb-1">
                   <div
-                    class="font-amatic-sc font-bold"
-                    style="font-size: 52px; color: #d30c7b; line-height: 1"
+                    class="font-amatic-sc font-bold text-[52px] text-[#d30c7b] leading-none"
                   >
                     2024
                   </div>
                   <div
-                    class="tl-icon"
-                    style="
-                      width: 32px;
-                      height: 32px;
-                      border-radius: 10px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      background: rgba(211, 12, 123, 0.18);
-                      border: 1px solid rgba(211, 12, 123, 0.3);
-                    "
+                    class="tl-icon size-8 rounded-xl flex items-center justify-center border border-[#d30c7b]/30"
+                    style="background: rgba(211, 12, 123, 0.18)"
                   >
                     <svg
                       width="14"
@@ -807,112 +667,52 @@
                   </div>
                 </div>
                 <div
+                  class="text-[9px] font-bold tracking-[2px] uppercase border px-2 py-0.5 rounded inline-block mt-1.5 mb-2.5"
                   style="
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 2px;
-                    text-transform: uppercase;
                     color: rgba(211, 12, 123, 0.8);
-                    border: 1px solid rgba(211, 12, 123, 0.3);
-                    padding: 3px 8px;
-                    border-radius: 3px;
-                    display: inline-block;
-                    margin: 6px 0 10px;
+                    border-color: rgba(211, 12, 123, 0.3);
                   "
                 >
                   Formation intensive
                 </div>
                 <div
-                  class="font-amatic-sc font-bold text-white"
-                  style="font-size: 36px; line-height: 1"
+                  class="font-amatic-sc font-bold text-white text-[34px] leading-none"
                 >
                   Garage404/
                 </div>
                 <p
-                  style="
-                    font-size: 11.5px;
-                    font-weight: 300;
-                    color: rgba(255, 255, 255, 0.45);
-                    line-height: 1.65;
-                    margin-top: 8px;
-                  "
+                  class="text-[11.5px] font-light text-white/45 leading-relaxed mt-2"
                 >
                   Développement web full-stack à Saint-Étienne. Du HTML au
                   Symfony, de l'idée au projet déployé.
                 </p>
                 <span
-                  style="
-                    display: inline-block;
-                    margin-top: 12px;
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                    padding: 4px 10px;
-                    border-radius: 20px;
-                    background: rgba(211, 12, 123, 0.2);
-                    color: rgba(211, 12, 123, 0.9);
-                    border: 1px solid rgba(211, 12, 123, 0.4);
-                  "
+                  class="inline-block mt-3 text-[9px] font-bold tracking-[1px] px-2.5 py-1 rounded-full bg-[#d30c7b]/20 text-[#d30c7b] border border-[#d30c7b]/40"
                   >JS · PHP · Symfony · Tailwind</span
                 >
               </div>
             </div>
 
-            <div style="width: 48px; flex-shrink: 0"></div>
+            <div class="w-[350px] shrink-0"></div>
 
-            <!-- ─── ÉTAPE 4 — EN HAUT, LONGUE TIGE ─── -->
+            <!-- 2025 · Dev. web · AU-DESSUS -->
             <div
-              class="tl-node"
-              style="
-                display: flex;
-                flex-direction: column-reverse;
-                align-items: center;
-                flex-shrink: 0;
-              "
+              class="tl-node flex items-center shrink-0"
+              style="flex-direction: column-reverse"
             >
               <div
-                style="
-                  width: 1px;
-                  height: 10px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.5),
-                    rgba(211, 12, 123, 0.1)
-                  );
-                "
+                class="w-px h-3 bg-gradient-to-b from-[#d30c7b]/50 to-[#d30c7b]/10"
               ></div>
               <div
-                class="tl-dot"
-                style="
-                  width: 12px;
-                  height: 12px;
-                  border-radius: 50%;
-                  background: #d30c7b;
-                  box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.2);
-                  transition: all 0.3s;
-                  z-index: 4;
-                  flex-shrink: 0;
-                "
+                class="tl-dot size-3 rounded-full bg-[#d30c7b] shrink-0"
+                style="box-shadow: 0 0 0 3px rgba(211, 12, 123, 0.25)"
               ></div>
               <div
-                style="
-                  width: 1px;
-                  height: 110px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.1),
-                    rgba(211, 12, 123, 0.5)
-                  );
-                "
+                class="w-px h-[110px] bg-gradient-to-b from-[#d30c7b]/10 to-[#d30c7b]/50"
               ></div>
               <div
-                class="tl-card"
+                class="tl-card w-52 rounded-[20px] p-5 border border-white/[0.08] bg-white/[0.04] relative overflow-hidden"
                 style="
-                  width: 210px;
-                  border-radius: 20px;
-                  padding: 24px 22px 20px;
-                  border: 1px solid rgba(255, 255, 255, 0.08);
-                  background: rgba(255, 255, 255, 0.04);
-                  position: relative;
-                  overflow: hidden;
                   transition:
                     transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
                     border-color 0.3s,
@@ -920,147 +720,65 @@
                 "
               >
                 <div
-                  style="
-                    position: absolute;
-                    inset: 0;
-                    border-radius: 20px;
-                    background: linear-gradient(
-                      135deg,
-                      rgba(255, 255, 255, 0.04),
-                      transparent 50%
-                    );
-                    pointer-events: none;
-                  "
+                  class="absolute inset-0 rounded-[20px] bg-gradient-to-br from-white/[0.04] to-transparent pointer-events-none"
                 ></div>
                 <div
-                  style="
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 2px;
-                    border-radius: 0 0 20px 20px;
-                    background: #d30c7b;
-                    transform: scaleX(0);
-                    transform-origin: left;
-                    transition: transform 0.35s ease;
-                  "
-                  class="tl-accent"
+                  class="tl-accent absolute bottom-0 left-0 right-0 h-0.5 rounded-b-[20px] bg-[#d30c7b] origin-left"
+                  style="transform: scaleX(0); transition: transform 0.35s ease"
                 ></div>
                 <div
-                  class="font-amatic-sc font-bold"
-                  style="font-size: 44px; color: #d30c7b; line-height: 1"
+                  class="font-amatic-sc font-bold text-[44px] text-[#d30c7b] leading-none"
                 >
                   2025
                 </div>
                 <div
-                  style="
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 2px;
-                    text-transform: uppercase;
-                    color: rgba(255, 255, 255, 0.3);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
-                    padding: 3px 8px;
-                    border-radius: 3px;
-                    display: inline-block;
-                    margin: 6px 0 10px;
-                  "
+                  class="text-[9px] font-bold tracking-[2px] uppercase text-white/30 border border-white/10 px-2 py-0.5 rounded inline-block mt-1.5 mb-2.5"
                 >
                   Projets
                 </div>
                 <div
-                  class="font-amatic-sc font-bold text-white"
-                  style="font-size: 28px; line-height: 1"
+                  class="font-amatic-sc font-bold text-white text-[26px] leading-none"
                 >
                   Dev. web
                 </div>
                 <p
-                  style="
-                    font-size: 11.5px;
-                    font-weight: 300;
-                    color: rgba(255, 255, 255, 0.45);
-                    line-height: 1.65;
-                    margin-top: 8px;
-                  "
+                  class="text-[11.5px] font-light text-white/45 leading-relaxed mt-2"
                 >
                   Premiers projets réels déployés. Interfaces responsives, apps
                   Symfony, collaboration GitHub.
                 </p>
                 <span
-                  style="
-                    display: inline-block;
-                    margin-top: 12px;
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                    padding: 4px 10px;
-                    border-radius: 20px;
-                    background: rgba(211, 12, 123, 0.12);
-                    color: rgba(211, 12, 123, 0.9);
-                    border: 1px solid rgba(211, 12, 123, 0.25);
-                  "
+                  class="inline-block mt-3 text-[9px] font-bold tracking-[1px] px-2.5 py-1 rounded-full bg-[#d30c7b]/10 text-[#d30c7b] border border-[#d30c7b]/25"
                   >GitHub · Figma · MySQL</span
                 >
               </div>
             </div>
 
-            <div style="width: 56px; flex-shrink: 0"></div>
+            <div class="w-[350px] shrink-0"></div>
 
-            <!-- ─── ÉTAPE 5 — EN BAS, NOW ─── -->
+            <!-- 2026 · IUT Auch · SIG · EN COURS -->
             <div
-              class="tl-node"
-              style="
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                flex-shrink: 0;
-              "
+              class="tl-node flex items-center shrink-0"
+              style="flex-direction: column"
             >
               <div
-                style="
-                  width: 1px;
-                  height: 50px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.5),
-                    rgba(211, 12, 123, 0.1)
-                  );
-                "
+                class="w-px h-12 bg-gradient-to-b from-[#d30c7b]/50 to-[#d30c7b]/10"
               ></div>
               <div
-                class="tl-dot tl-dot-now"
+                class="tl-dot tl-dot-now size-3 rounded-full bg-white shrink-0"
                 style="
-                  width: 12px;
-                  height: 12px;
-                  border-radius: 50%;
-                  background: #fff;
                   box-shadow:
                     0 0 0 3px rgba(211, 12, 123, 0.4),
                     0 0 16px rgba(211, 12, 123, 0.5);
-                  z-index: 4;
-                  flex-shrink: 0;
                 "
               ></div>
               <div
-                style="
-                  width: 1px;
-                  height: 50px;
-                  background: linear-gradient(
-                    rgba(211, 12, 123, 0.1),
-                    rgba(211, 12, 123, 0.5)
-                  );
-                "
+                class="w-px h-12 bg-gradient-to-b from-[#d30c7b]/10 to-[#d30c7b]/50"
               ></div>
               <div
-                class="tl-card"
+                class="tl-card w-60 rounded-[20px] p-5 border border-[#d30c7b]/35 relative overflow-hidden"
                 style="
-                  width: 260px;
-                  border-radius: 20px;
-                  padding: 24px 22px 20px;
                   background: rgba(211, 12, 123, 0.08);
-                  border: 1px solid rgba(211, 12, 123, 0.35);
-                  position: relative;
-                  overflow: hidden;
                   transition:
                     transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
                     border-color 0.3s,
@@ -1068,129 +786,54 @@
                 "
               >
                 <div
-                  style="
-                    position: absolute;
-                    inset: 0;
-                    border-radius: 20px;
-                    background: linear-gradient(
-                      135deg,
-                      rgba(255, 255, 255, 0.04),
-                      transparent 50%
-                    );
-                    pointer-events: none;
-                  "
+                  class="absolute inset-0 rounded-[20px] bg-gradient-to-br from-white/[0.04] to-transparent pointer-events-none"
                 ></div>
                 <div
-                  style="
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 3px;
-                    border-radius: 0 0 20px 20px;
-                    background: #d30c7b;
-                  "
-                  class="tl-accent-always"
+                  class="tl-accent-always absolute bottom-0 left-0 right-0 rounded-b-[20px] bg-[#d30c7b]"
+                  style="height: 3px"
                 ></div>
-                <!-- Badge "En cours" -->
                 <div
-                  style="
-                    position: absolute;
-                    top: 14px;
-                    right: 14px;
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    font-size: 9px;
-                    letter-spacing: 1.5px;
-                    text-transform: uppercase;
-                    color: #d30c7b;
-                  "
+                  class="absolute top-3.5 right-3.5 flex items-center gap-1.5 text-[9px] tracking-[1.5px] uppercase text-[#d30c7b]"
                 >
                   <div
-                    class="tl-now-dot"
-                    style="
-                      width: 5px;
-                      height: 5px;
-                      border-radius: 50%;
-                      background: #d30c7b;
-                    "
+                    class="tl-now-dot size-[5px] rounded-full bg-[#d30c7b]"
                   ></div>
                   En cours
                 </div>
                 <div
-                  class="font-amatic-sc font-bold"
-                  style="
-                    font-size: 56px;
-                    color: #d30c7b;
-                    line-height: 1;
-                    margin-top: 8px;
-                  "
+                  class="font-amatic-sc font-bold text-[56px] text-[#d30c7b] leading-none mt-2"
                 >
                   2026
                 </div>
                 <div
+                  class="text-[9px] font-bold tracking-[2px] uppercase border px-2 py-0.5 rounded inline-block mt-1.5 mb-2.5"
                   style="
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 2px;
-                    text-transform: uppercase;
                     color: rgba(211, 12, 123, 0.8);
-                    border: 1px solid rgba(211, 12, 123, 0.3);
-                    padding: 3px 8px;
-                    border-radius: 3px;
-                    display: inline-block;
-                    margin: 6px 0 10px;
+                    border-color: rgba(211, 12, 123, 0.3);
                   "
                 >
                   Objectif · Alternance
                 </div>
                 <div
-                  class="font-amatic-sc font-bold text-white"
-                  style="font-size: 32px; line-height: 1"
+                  class="font-amatic-sc font-bold text-white text-[30px] leading-none"
                 >
                   IUT Auch · SIG
                 </div>
                 <p
-                  style="
-                    font-size: 11.5px;
-                    font-weight: 300;
-                    color: rgba(255, 255, 255, 0.45);
-                    line-height: 1.65;
-                    margin-top: 8px;
-                  "
+                  class="text-[11.5px] font-light text-white/45 leading-relaxed mt-2"
                 >
                   Systèmes d'Information Géographique. Cartographie numérique,
                   données spatiales — l'avenir se construit.
                 </p>
                 <span
-                  style="
-                    display: inline-block;
-                    margin-top: 12px;
-                    font-size: 9px;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                    padding: 4px 10px;
-                    border-radius: 20px;
-                    background: rgba(211, 12, 123, 0.22);
-                    color: #d30c7b;
-                    border: 1px solid #d30c7b;
-                  "
+                  class="inline-block mt-3 text-[9px] font-bold tracking-[1px] px-2.5 py-1 rounded-full bg-[#d30c7b]/20 text-[#d30c7b] border border-[#d30c7b]"
                   >SIG · Géomatique · Alternance ✦</span
                 >
               </div>
             </div>
 
             <!-- Flèche de fin -->
-            <div
-              style="
-                width: 100px;
-                flex-shrink: 0;
-                display: flex;
-                align-items: center;
-                padding-left: 16px;
-              "
-            >
+            <div class="w-[100px] shrink-0 flex items-center pl-4">
               <svg width="60" height="12" viewBox="0 0 60 12">
                 <line
                   x1="0"
@@ -1203,36 +846,26 @@
                 <polygon points="48,2 56,6 48,10" fill="rgba(211,12,123,0.3)" />
               </svg>
             </div>
-            <div style="width: 52px; flex-shrink: 0"></div>
+            <div class="w-20 shrink-0"></div>
           </div>
         </div>
 
         <!-- Barre de progression -->
-        <div style="padding: 0 56px 36px">
-          <div
-            style="
-              height: 1px;
-              background: rgba(255, 255, 255, 0.05);
-              border-radius: 1px;
-              position: relative;
-            "
-          >
+        <div class="px-14 pb-5 shrink-0">
+          <div class="h-px rounded-full relative bg-white/5">
             <div
               id="tl-progress"
+              class="h-full bg-[#d30c7b] w-0 rounded-full"
               style="
-                height: 100%;
-                background: #d30c7b;
-                width: 0%;
                 transition: width 0.08s linear;
                 box-shadow: 0 0 8px rgba(211, 12, 123, 0.4);
-                border-radius: 1px;
               "
             ></div>
           </div>
         </div>
       </section>
 
-      <!-- /////////////////////////////:SECTION TECHNOS//////////////////////////////////////////// -->
+      <!-- ── COMPÉTENCES ─────────────────────────────── -->
       <section class="bg-white flex flex-row justify-between px-26">
         <div
           class="flex flex-col justify-center items-center py-8 gap-10 text-black"
@@ -1240,26 +873,27 @@
           <div class="font-amatic-sc text-3xl">FRONTEND</div>
           <div class="flex flex-row gap-10">
             <div class="flex flex-col items-center">
-              <img src="./assets/images/js (1).png" alt="" class="w-15" />
+              <img
+                src="./assets/images/js (1).png"
+                alt="JavaScript"
+                class="w-15"
+              />
               Javascript
             </div>
-
             <div class="flex flex-col items-center">
               <img
                 src="./assets/images/tailwindcss-original.svg"
-                alt=""
+                alt="Tailwind CSS"
                 class="w-15"
               />
               Tailwind CSS
             </div>
-
             <div class="flex flex-col items-center">
-              <img src="./assets/images/html-5.png" alt="" class="w-15" />
+              <img src="./assets/images/html-5.png" alt="HTML" class="w-15" />
               HTML
             </div>
-
             <div class="flex flex-col items-center">
-              <img src="./assets/images/css-3.png" alt="" class="w-15" />
+              <img src="./assets/images/css-3.png" alt="CSS" class="w-15" />
               CSS
             </div>
           </div>
@@ -1271,12 +905,15 @@
           <div class="font-amatic-sc text-3xl">BACKEND</div>
           <div class="flex flex-row gap-10">
             <div class="flex flex-col items-center">
-              <img src="./assets/images/sylmfony.svg" alt="" class="w-15" />
+              <img
+                src="./assets/images/sylmfony.svg"
+                alt="Symfony"
+                class="w-15"
+              />
               Symfony
             </div>
-
             <div class="flex flex-col items-center">
-              <img src="./assets/images/php.png" alt="" class="w-15" />
+              <img src="./assets/images/php.png" alt="PHP" class="w-15" />
               PHP
             </div>
           </div>
@@ -1286,15 +923,13 @@
           class="flex flex-col justify-center items-center py-8 gap-10 text-black"
         >
           <div class="font-amatic-sc text-3xl">DATABASE</div>
-          <div class="flex flex-row">
-            <div class="flex flex-col items-center">
-              <img
-                src="./assets/images/base-de-donnees.png"
-                alt=""
-                class="w-15"
-              />
-              MySQL
-            </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="./assets/images/base-de-donnees.png"
+              alt="MySQL"
+              class="w-15"
+            />
+            MySQL
           </div>
         </div>
 
@@ -1304,87 +939,68 @@
           <div class="font-amatic-sc text-3xl">TOOLS</div>
           <div class="flex flex-row gap-10">
             <div class="flex flex-col items-center">
-              <img src="./assets/images/github-logo.png" alt="" class="w-15" />
+              <img
+                src="./assets/images/github-logo.png"
+                alt="GitHub"
+                class="w-15"
+              />
               GitHub
             </div>
-
             <div class="flex flex-col items-center">
-              <img src="./assets/images/figma.png" alt="" class="w-15" />
+              <img src="./assets/images/figma.png" alt="Figma" class="w-15" />
               Figma
             </div>
           </div>
         </div>
       </section>
 
-      <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
-
+      <!-- ── PROJETS ─────────────────────────────────── -->
       <section class="bg-[#A2AD91]">
         <h2
           class="font-amatic-sc text-[#19381F] text-center text-8xl py-26 font-extrabold"
         >
-          <!-- <h2
-          class="font-amatic-sc text-[#0A122A] text-center text-8xl py-26 font-extrabold"
-        > -->
-
           Mes Projets
         </h2>
-        <!-- <hr
-          class="h-1 w-1/2 mx-auto bg-[#0A122A] rounded-full border-none outline-none 
-          shadow-[0_0_10px_#be185d,0_0_20px_#be185d,0_0_40px_#be185d]"
-        /> -->
-        <!-- 
         <hr
-  class="w-1/2 mx-auto border-none outline-none rounded-full"
-  style="height:1px; background:#4d5a1e;
-    box-shadow:0 0 6px #4d5a1e,0 0 14px #4d5a1e,0 0 28px #3d4716;"
-/> -->
-
-        <hr
-          class="w-1/2 mx-auto border-none outline-none rounded-full"
-          style="
-            height: 2px;
-            background: #4d5a1e;
-            box-shadow:
-              0 0 8px #4d5a1e,
-              0 0 18px #4d5a1e,
-              0 0 32px #3d4716;
-          "
+          class="h-[2px] w-1/2 mx-auto border-none outline-none rounded-full bg-[#4d5a1e] shadow-[0_0_8px_#4d5a1e,0_0_18px_#4d5a1e,0_0_32px_#3d4716]"
         />
 
         <div class="flex flex-row py-36 px-16 justify-center gap-4">
           <div
             class="flex flex-col items-center font-amatic-sc text-5xl font-bold text-[#5E5B52] gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center"
           >
-            <img src="./assets/images/github-logo.png" alt="" class="w-24" />
+            <img
+              src="./assets/images/github-logo.png"
+              alt="GitHub"
+              class="w-24"
+            />
             Take
           </div>
-
           <div
             class="flex flex-col items-center font-amatic-sc text-5xl font-bold text-[#5E5B52] gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center"
           >
             <img
               src="./assets/images/logo-linkedin-effet-gradient-3d.png"
-              alt=""
+              alt="LinkedIn"
               class="w-24"
             />
             The Mountain king
           </div>
-
           <div
             class="flex flex-col items-center font-amatic-sc text-5xl font-bold text-[#5E5B52] gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center"
           >
-            <img src="./assets/images/e-mail.png" alt="" class="w-24" />
+            <img src="./assets/images/e-mail.png" alt="Email" class="w-24" />
             DRUM PAD
           </div>
         </div>
       </section>
 
-      <!-- /////////////////Portfolio//////////////////////////////////////////////////////// -->
+      <!-- ── CONTACT ─────────────────────────────────── -->
       <section
-        class="w-full h-screen bg-[url(./assets/images/2234701-steampunk-2047102.jpg)] bg-cover bg-bottom py-36 px-16 justify-between justify-center gap-4"
+        class="w-full h-screen bg-[url(./assets/images/2234701-steampunk-2047102.jpg)] bg-cover bg-bottom flex flex-col items-center justify-center gap-8 py-36 px-16"
       >
         <h2
-          class="font-amatic-sc text-black text-center text-8xl py-26 font-extrabold"
+          class="font-amatic-sc text-black text-center text-8xl font-extrabold"
         >
           Prenons contact !
         </h2>
@@ -1394,71 +1010,57 @@
 
         <div class="flex flex-row justify-center gap-9 py-9 px-6">
           <div
-            class="flex flex-col items-center font-amatic-sc text-5xl font-bold text-pink-700 gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center items-center"
+            class="flex flex-col items-center font-amatic-sc text-5xl font-bold text-pink-700 gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center"
           >
-            <img src="./assets/images/e-mail.png" alt="" class="w-18" />
-            E.mail
-
-            <p class="text-xl text-black font-geist">
-              chateauneufsandrine188@gmail.com
-            </p>
+            <img src="./assets/images/e-mail.png" alt="Email" class="w-18" />
+            E-mail
+            <span class="text-xl text-black font-geist"
+              >chateauneufsandrine188@gmail.com</span
+            >
           </div>
-
           <div
-            class="flex flex-col items-center font-amatic-sc text-5xl font-bold text-pink-700 gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center items-center"
+            class="flex flex-col items-center font-amatic-sc text-5xl font-bold text-pink-700 gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center"
           >
-            <img src="./assets/images/github-logo.png" alt="" class="w-18" />
+            <img
+              src="./assets/images/github-logo.png"
+              alt="GitHub"
+              class="w-18"
+            />
             GitHub
           </div>
-
           <div
-            class="flex flex-col items-center font-amatic-sc text-5xl font-bold text-pink-700 gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center items-center"
+            class="flex flex-col items-center font-amatic-sc text-5xl font-bold text-pink-700 gap-3 shadow-xl px-18 py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center"
           >
             <img
               src="./assets/images/logo-linkedin-effet-gradient-3d.png"
-              alt=""
+              alt="LinkedIn"
               class="w-18"
             />
-            Linkedin
+            LinkedIn
           </div>
         </div>
       </section>
 
-      <!-- /////////////////CONTACT////////////////////////////////////////////////////// -->
-
-      <footer class="bg-[#F18F01] text-center flex flex-col">
+      <!-- ── FOOTER ──────────────────────────────────── -->
+      <footer class="bg-[#F18F01] text-center flex flex-col py-4 gap-2">
         <h3 class="font-amatic-sc text-xl">Fait avec</h3>
-
         <hr
-          class="w-1/6 mx-auto border-none outline-none rounded-full"
-          style="
-            height: 1px;
-            background: #4d5a1e;
-            box-shadow:
-              0 0 6px #4d5a1e,
-              0 0 14px #4d5a1e,
-              0 0 28px #3d4716;
-          "
+          class="h-px w-1/6 mx-auto border-none outline-none rounded-full bg-[#4d5a1e] shadow-[0_0_6px_#4d5a1e,0_0_14px_#4d5a1e,0_0_28px_#3d4716]"
         />
 
         <div class="flex flex-row justify-center gap-4 pt-2">
-          <p
-            class="flex gap-3 shadow-xl px-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-[#4d5a1e] text-center font-amatic-sc text-[#19381F] items-center text-md shadow-[0_0_6px_#4d5a1e,0_0_14px_#4d5a1e]"
+          <span
+            class="flex gap-3 shadow-xl px-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-[#4d5a1e] font-amatic-sc text-[#19381F] items-center shadow-[0_0_6px_#4d5a1e,0_0_14px_#4d5a1e]"
+            >HTML</span
           >
-            HTML
-          </p>
-
-          <p
-            class="flex gap-3 shadow-xl px-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-[#4d5a1e] text-center font-amatic-sc text-[#19381F] items-center text-md shadow-[0_0_6px_#4d5a1e,0_0_14px_#4d5a1e]"
+          <span
+            class="flex gap-3 shadow-xl px-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-[#4d5a1e] font-amatic-sc text-[#19381F] items-center shadow-[0_0_6px_#4d5a1e,0_0_14px_#4d5a1e]"
+            >CSS</span
           >
-            CSS
-          </p>
-
-          <p
-            class="flex gap-3 shadow-xl px-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-[#4d5a1e] text-center font-amatic-sc text-[#19381F] items-center text-md shadow-[0_0_6px_#4d5a1e,0_0_14px_#4d5a1e]"
+          <span
+            class="flex gap-3 shadow-xl px-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-[#4d5a1e] font-amatic-sc text-[#19381F] items-center shadow-[0_0_6px_#4d5a1e,0_0_14px_#4d5a1e]"
+            >JavaScript</span
           >
-            JavaScript
-          </p>
         </div>
 
         <p
@@ -1466,7 +1068,6 @@
         >
           Sandrine Chateauneuf
         </p>
-
         <p class="text-[#7a3e00] text-sm">© 2026</p>
       </footer>
     </main>
