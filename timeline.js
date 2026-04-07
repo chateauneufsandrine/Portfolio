@@ -36,7 +36,8 @@ const getEndX = () => -(track.scrollWidth - wrap.clientWidth);
 // ── SVG reliant les dots (courbe de Bézier) ───────────────
 let axisPathEl = null,
   axisHaloEl = null,
-  axisPathLen = 0;
+  axisPathLen = 0,
+  axisLUT = [];
 
 function buildAxisSVG() {
   const old = track.querySelector(".tl-axis-svg");
@@ -90,6 +91,32 @@ function buildAxisSVG() {
     p.style.strokeDasharray = axisPathLen;
     p.style.strokeDashoffset = axisPathLen;
   });
+
+  // Table de correspondance x → fraction de longueur du path
+  const LUT_STEPS = 200;
+  axisLUT = [];
+  for (let i = 0; i <= LUT_STEPS; i++) {
+    const len = (i / LUT_STEPS) * axisPathLen;
+    const pt = axisPathEl.getPointAtLength(len);
+    axisLUT.push({ x: pt.x, frac: i / LUT_STEPS });
+  }
+}
+
+function pathFracAtX(targetX) {
+  if (!axisLUT.length) return 0;
+  if (targetX <= axisLUT[0].x) return 0;
+  if (targetX >= axisLUT[axisLUT.length - 1].x) return 1;
+  let lo = 0,
+    hi = axisLUT.length - 1;
+  while (lo < hi - 1) {
+    const mid = (lo + hi) >> 1;
+    if (axisLUT[mid].x < targetX) lo = mid;
+    else hi = mid;
+  }
+  const a = axisLUT[lo],
+    b = axisLUT[hi];
+  const t = (targetX - a.x) / (b.x - a.x || 1);
+  return a.frac + t * (b.frac - a.frac);
 }
 
 // ── Révélation des cartes au scroll ──────────────────────
@@ -143,7 +170,9 @@ requestAnimationFrame(() => {
         gsap.set(track, { x: -distance * self.progress });
 
         if (axisPathLen) {
-          const offset = axisPathLen * (1 - self.progress);
+          const targetX = track.scrollWidth * self.progress;
+          const frac = pathFracAtX(targetX);
+          const offset = axisPathLen * (1 - frac);
           axisPathEl.style.strokeDashoffset = offset;
           axisHaloEl.style.strokeDashoffset = offset;
         }
