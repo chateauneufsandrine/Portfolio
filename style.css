@@ -445,8 +445,17 @@
   .w-35 {
     width: calc(var(--spacing) * 35);
   }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+  .w-40\.5 {
+    width: calc(var(--spacing) * 40.5);
+  }
   .w-48 {
     width: calc(var(--spacing) * 48);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
   }
   .w-52 {
     width: calc(var(--spacing) * 52);
@@ -1216,6 +1225,11 @@
   .md\:w-12 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:w-100 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 100);
     }
   }
   .md\:gap-6 {

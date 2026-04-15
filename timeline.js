@@ -46,14 +46,28 @@ function buildAxisSVG() {
   const dots = Array.from(track.querySelectorAll(".tl-dot"));
   if (!dots.length) return;
 
-  const TR = track.getBoundingClientRect();
-  if (!TR.width) return;
+  const trackW = track.scrollWidth;
+  const trackH = track.offsetHeight;
+  if (!trackW || !trackH) return;
+
+  // Compute dot positions via offsetLeft/Top (transform-independent)
+  function posInTrack(el) {
+    let x = 0,
+      y = 0,
+      cur = el;
+    while (cur && cur !== track) {
+      x += cur.offsetLeft;
+      y += cur.offsetTop;
+      cur = cur.offsetParent;
+    }
+    return { x, y };
+  }
 
   const pts = dots.map((dot) => {
-    const R = dot.getBoundingClientRect();
+    const pos = posInTrack(dot);
     return {
-      x: R.left + R.width / 2 - TR.left,
-      y: R.top + R.height / 2 - TR.top,
+      x: pos.x + dot.offsetWidth / 2,
+      y: pos.y + dot.offsetHeight / 2,
     };
   });
 
@@ -66,7 +80,7 @@ function buildAxisSVG() {
   const NS = "http://www.w3.org/2000/svg";
   const svg = document.createElementNS(NS, "svg");
   svg.classList.add("tl-axis-svg");
-  svg.style.cssText = `position:absolute;top:0;left:0;width:${track.scrollWidth}px;height:${TR.height}px;overflow:visible;pointer-events:none;z-index:3;`;
+  svg.style.cssText = `position:absolute;top:0;left:0;width:${trackW}px;height:${trackH}px;overflow:visible;pointer-events:none;z-index:3;`;
 
   axisHaloEl = document.createElementNS(NS, "path");
   axisHaloEl.setAttribute("d", d);
