@@ -23,43 +23,39 @@
   <body class="font-geist">
     <!-- ── NAVBAR ─────────────────────────────────── -->
     <header
-      class="fixed top-3 left-3 right-3 xl:top-6 xl:left-9 xl:right-9 2xl:top-16 2xl:left-16 2xl:right-16 z-50 
-      shadow-xl bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30"
+      class="fixed top-3 left-3 right-3 xl:top-6 xl:left-9 xl:right-9 2xl:top-16 2xl:left-16 2xl:right-16 z-50 shadow-xl bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30"
     >
       <nav
         class="flex flex-row justify-between items-center xl:py-2 2xl:px-16 2xl:py-4"
       >
         <a
           href="#"
-          class="text-sm hidden xl:hidden 2xl:text-4xl 2xl:flex font-amatic-sc 
-          font-bold leading-tight hover:scale-105 hover:bg-white/25 
-          transition duration-100"
+          class="text-sm hidden xl:hidden 2xl:text-4xl 2xl:flex font-amatic-sc font-bold leading-tight hover:scale-105 hover:bg-white/25 transition duration-100"
         >
           SANDRINE<br />CHATEAUNEUF
         </a>
 
         <a
           href="#"
-          class=" text-sm:flex px-2 lg:px-2 xl:text-3xl xl:flexn2xl:text-4xl 2xl:hidden 
-          font-amatic-sc font-bold leading-tight hover:scale-105  hover:bg-white/25 
-          transition duration-100 "
+          class="text-sm:flex px-2 lg:px-2 xl:text-3xl xl:flexn2xl:text-4xl 2xl:hidden font-amatic-sc font-bold leading-tight hover:scale-105 hover:bg-white/25 transition duration-100"
         >
           SANDRINE CHATEAUNEUF
         </a>
 
         <div class="flex text-sm px-2 gap-2 items-center lg:gap-5 2xl:gap-8">
-          <a href="#à-propos" class=" text-xs 2xl:text-xl hover:scale-105 hover:bg-white/25 
-          transition duration-100"
+          <a
+            href="#à-propos"
+            class="text-xs 2xl:text-xl hover:scale-105 hover:bg-white/25 transition duration-100"
             >À Propos</a
           >
-          <a href="#mes-projets" class=" text-xs 2xl:text-xl hover:scale-105 hover:bg-white/25 
-          transition duration-100"
+          <a
+            href="#mes-projets"
+            class="text-xs 2xl:text-xl hover:scale-105 hover:bg-white/25 transition duration-100"
             >Mes Projets</a
           >
           <a
             href="#contact"
-            class="bg-[#D30C7B] px-2 py-1 text-xs xl:px-4 xl:py-2 2xl:px-8 2xl:py-4 rounded-md 2xl:text-xl
-             text-white hover:bg-[#E2294F]"
+            class="bg-[#D30C7B] px-2 py-1 text-xs xl:px-4 xl:py-2 2xl:px-8 2xl:py-4 rounded-md 2xl:text-xl text-white hover:bg-[#E2294F]"
             >Contact</a
           >
         </div>
@@ -110,9 +106,7 @@
         </div>
 
         <div
-          class="flex gap-3 shadow-xl px-2 py-1.5 xl:px-10 xl:py-1.5 2xl:px-18 2xl:py-3.5
-           bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30
-            text-white items-center text-xs xl:text-sm 2xl:text-xl hover:scale-105 hover:bg-white/25 transition duration-300"
+          class="flex gap-3 shadow-xl px-2 py-1.5 xl:px-10 xl:py-1.5 2xl:px-18 2xl:py-3.5 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-white items-center text-xs xl:text-sm 2xl:text-xl hover:scale-105 hover:bg-white/25 transition duration-300"
         >
           <img
             src="./assets/images/compass-arrows.png"
@@ -184,10 +178,7 @@
 
       <!-- ═══════════════ FRISE CHRONOLOGIQUE ═══════════════ -->
 
-      <section
-        id="tl-section"
-        class="relative overflow-hidden bg-[#1e0f18] h-screen flex flex-col"
-      >
+      <section id="tl-section" class="relative overflow-hidden bg-[#1e0f18]">
         <!-- Fond décoratif pointillé -->
         <div
           class="absolute inset-0 pointer-events-none z-0"
@@ -261,11 +252,12 @@
           </div>
         </div>
 
-        <div class="h-4 shrink-0"></div>
-
         <!-- PISTE -->
-        <div id="tl-wrap" class="relative z-10 flex-1 overflow-hidden px-14">
-          <div id="tl-track" class="flex items-center w-max relative h-full">
+        <div
+          id="tl-wrap"
+          class="relative z-10 h-screen overflow-hidden px-14 flex flex-col"
+        >
+          <div id="tl-track" class="flex items-center w-max relative flex-1">
             <!-- Axe fond -->
             <div
               class="absolute top-1/2 -translate-y-1/2 left-0 w-full h-px pointer-events-none bg-[rgba(211,12,123,0.08)]"
@@ -273,7 +265,7 @@
 
             <div class="w-20 shrink-0"></div>
 
-            <div class="flex flex-row gap-4">
+            <div class="flex flex-row gap-4 items-center">
               <!-- 2012 · Diplôme DEAS · AU-DESSUS -->
               <div
                 class="tl-node flex items-center shrink-0"
@@ -355,19 +347,22 @@
 
               <div class="w-87.5 shrink-0"></div>
 
-              <!-- Bloc photos avec wrap -->
               <!-- Bloc photos -->
-              <div class="flex flex-col gap-2">
-                <img
-                  src="./assets/images/emile roux.webp"
-                  alt="Photo 1"
-                  class="w-full h-36 object-cover rounded-lg"
-                />
-                <img
-                  src="./assets/images/Le_Puy_en_Velay_Panorama.jpg"
-                  alt="Photo 2"
-                  class="w-full h-36 object-cover rounded-lg"
-                />
+              <div
+                class="photo-card w-80 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
+              >
+                <div class="flex flex-col gap-3">
+                  <img
+                    src="./assets/images/emile roux.webp"
+                    alt="Photo 1"
+                    class="w-full h-36 object-cover rounded-lg"
+                  />
+                  <img
+                    src="./assets/images/Le_Puy_en_Velay_Panorama.jpg"
+                    alt="Photo 2"
+                    class="w-full h-36 object-cover rounded-lg"
+                  />
+                </div>
               </div>
             </div>
 
@@ -448,7 +443,7 @@
 
             <div class="w-87.5 shrink-0"></div>
 
-            <div class="flex flex-row gap-4">
+            <div class="flex flex-row gap-4 items-center">
               <div
                 class="photo-card w-100 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
               >
@@ -501,7 +496,7 @@
                       transition: transform 0.35s ease;
                     "
                   ></div>
-                
+
                   <div
                     class="font-amatic-sc font-bold text-[48px] text-[#d30c7b] leading-none"
                   >
@@ -535,10 +530,10 @@
               <div class="w-87.5 shrink-0"></div>
             </div>
 
-            <div class="flex flex-row gap-4">
+            <div class="flex flex-row gap-4 items-center">
               <!-- Card Photo Agrandie -->
               <div
-                class="photo-card w-100 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
+                class="w-100 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
               >
                 <!-- Bloc photos avec wrap -->
                 <div class="flex flex-wrap gap-3">
@@ -678,8 +673,6 @@
                     "
                   ></div>
 
-                 
-
                   <div
                     class="font-amatic-sc font-bold text-[48px] text-[#d30c7b] leading-none"
                   >
@@ -770,11 +763,9 @@
                   >
                     Diagnostic
                   </div>
-                
                 </div>
                 <div
-                  class="text-[9px] font-bold tracking-[2px] uppercase border px-2 py-0.5 
-                  rounded inline-block mt-1.5 mb-2.5"
+                  class="text-[9px] font-bold tracking-[2px] uppercase border px-2 py-0.5 rounded inline-block mt-1.5 mb-2.5"
                   style="
                     color: rgba(211, 12, 123, 0.8);
                     border-color: rgba(211, 12, 123, 0.3);
@@ -798,14 +789,14 @@
                 </p>
                 <span
                   class="inline-block mt-3 text-[9px] font-bold tracking-[1px] px-2.5 py-1 rounded-full bg-[#d30c7b]/20 text-[#d30c7b] border border-[#d30c7b]/40"
-                  >Cabinet Malizo · 2025  </span
-                >
+                  >Cabinet Malizo · 2025
+                </span>
               </div>
             </div>
 
             <div class="w-87.5 shrink-0"></div>
 
-            <div class="flex flex-row gap-4">
+            <div class="flex flex-row gap-4 items-center">
               <div
                 class="photo-card w-100 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
               >
@@ -904,7 +895,7 @@
 
             <!-- 2026 · IUT Auch · SIG · EN COURS -->
 
-            <div class="flex flex-row gap-4">
+            <div class="flex flex-row gap-4 items-center">
               <div
                 class="tl-node flex items-center shrink-0"
                 style="flex-direction: column"
@@ -981,7 +972,7 @@
               </div>
 
               <div
-                class="photo-card w-125 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
+                class="photo-card w-100 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
               >
                 <img
                   src="./assets/images/LP-GB-GGAT-25-26_page-0001.jpg"
@@ -991,7 +982,7 @@
               </div>
 
               <div
-                class="photo-card w-125 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
+                class="photo-card w-100 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
               >
                 <img
                   src="./assets/images/LP-GB-GGAT-25-26_page-0002.jpg"
@@ -1001,7 +992,7 @@
               </div>
 
               <div
-                class="photo-card w-125 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
+                class="photo-card w-100 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
               >
                 <img
                   src="./assets/images/LP-GB-GGAT-25-26_page-0003.jpg"
@@ -1010,7 +1001,7 @@
                 />
               </div>
               <div
-                class="photo-card w-125 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
+                class="photo-card w-100 rounded-[20px] p-5 bg-white/5 border border-white/10 shadow-md overflow-hidden"
               >
                 <img
                   src="./assets/images/LP-GB-GGAT-25-26_page-0004.jpg"
@@ -1038,19 +1029,19 @@
               <div class="w-20 shrink-0"></div>
             </div>
           </div>
-        </div>
 
-        <!-- Barre de progression -->
-        <div class="px-14 pb-5 shrink-0">
-          <div class="h-px rounded-full relative bg-white/5">
-            <div
-              id="tl-progress"
-              class="h-full bg-[#d30c7b] w-0 rounded-full"
-              style="
-                transition: width 0.08s linear;
-                box-shadow: 0 0 8px rgba(211, 12, 123, 0.4);
-              "
-            ></div>
+          <!-- Barre de progression -->
+          <div class="pb-5 shrink-0">
+            <div class="h-px rounded-full relative bg-white/5">
+              <div
+                id="tl-progress"
+                class="h-full bg-[#d30c7b] w-0 rounded-full"
+                style="
+                  transition: width 0.08s linear;
+                  box-shadow: 0 0 8px rgba(211, 12, 123, 0.4);
+                "
+              ></div>
+            </div>
           </div>
         </div>
       </section>
@@ -1201,7 +1192,7 @@
           class="flex flex-col pt-2 px-1 lg:flex lg:flex-row lg:py-6 lg:px-16 xl:flex-row justify-center gap-4"
         >
           <div
-            class="flex flex-col items-center gap-4 font-amatic-sc text-xl font-bold text-[#5E5B52] shadow-xl px-18 py-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center lg:justify-between xl:text-5xl xl:gap-7 "
+            class="flex flex-col items-center gap-4 font-amatic-sc text-xl font-bold text-[#5E5B52] shadow-xl px-18 py-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center lg:justify-between xl:text-5xl xl:gap-7"
           >
             <img
               src="./assets//images//Capture d’écran Take.jpg"
@@ -1229,7 +1220,7 @@
           </div>
 
           <div
-            class="flex flex-col items-center gap-4 font-amatic-sc text-xl  font-bold text-[#5E5B52] shadow-xl px-18 py-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center lg:justify-between xl:text-5xl xl:gap-7"
+            class="flex flex-col items-center gap-4 font-amatic-sc text-xl font-bold text-[#5E5B52] shadow-xl px-18 py-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center lg:justify-between xl:text-5xl xl:gap-7"
           >
             <img
               src="./assets//images//Capture d’écran the mountain_king.jpg"
@@ -1258,7 +1249,7 @@
           </div>
 
           <div
-            class="flex flex-col items-center gap-4 font-amatic-sc text-xl  font-bold text-[#5E5B52] shadow-xl px-18 py-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center lg:justify-between xl:text-5xl xl:gap-7 "
+            class="flex flex-col items-center gap-4 font-amatic-sc text-xl font-bold text-[#5E5B52] shadow-xl px-18 py-4 bg-white/15 backdrop-blur-[3px] rounded-md border border-white/30 text-center lg:justify-between xl:text-5xl xl:gap-7"
           >
             <img
               src="./assets/images/Capture d’écran drumpad.jpg"
@@ -1303,14 +1294,11 @@
         />
 
         <div
-          class=" flex flex-col justify-center gap-4 py-7 lg:gap-3 lg:flex-row lg:py-2 
-          lg:w-full 2xl:flex 2xl:flex-row lg:px-3"
+          class="flex flex-col justify-center gap-4 py-7 lg:gap-3 lg:flex-row lg:py-2 lg:w-full 2xl:flex 2xl:flex-row lg:px-3"
         >
           <a
             href="mailto:chateauneufsandrine188@gmail.com"
-            class="flex flex-col items-center font-amatic-sc text-xl sm:text-2xl 2xl:text-5xl font-bold
-             text-pink-700 gap-3 shadow-xl px-9 sm:px-16 py-3.5 lg:py-16  bg-white/15 backdrop-blur-xs 
-             rounded-md border border-white/30 text-center justify-between lg:w-1/3 hover:scale-105 hover:bg-white/25 transition duration-300"
+            class="flex flex-col items-center font-amatic-sc text-xl sm:text-2xl 2xl:text-5xl font-bold text-pink-700 gap-3 shadow-xl px-9 sm:px-16 py-3.5 lg:py-16 bg-white/15 backdrop-blur-xs rounded-md border border-white/30 text-center justify-between lg:w-1/3 hover:scale-105 hover:bg-white/25 transition duration-300"
           >
             <img
               src="./assets/images/e-mail.png"
@@ -1320,32 +1308,24 @@
             <p>Email</p>
           </a>
 
-
-
-          <a href="https://github.com/chateauneufsandrine" target="_blank"
-            class="flex flex-col items-center font-amatic-sc justify-between text-xl w-full 
-            sm:text-2xl 2xl:text-5xl font-bold text-pink-700 gap-3 shadow-xl px-9 
-            sm:px-16 py-3.5 lg:py-16  bg-white/15 backdrop-blur-xs rounded-md border
-             border-white/30 text-center lg:w-1/3  hover:scale-105 hover:bg-white/25 transition duration-300"
+          <a
+            href="https://github.com/chateauneufsandrine"
+            target="_blank"
+            class="flex flex-col items-center font-amatic-sc justify-between text-xl w-full sm:text-2xl 2xl:text-5xl font-bold text-pink-700 gap-3 shadow-xl px-9 sm:px-16 py-3.5 lg:py-16 bg-white/15 backdrop-blur-xs rounded-md border border-white/30 text-center lg:w-1/3 hover:scale-105 hover:bg-white/25 transition duration-300"
           >
-  
             <img
               src="./assets/images/github-logo.png"
               alt="GitHub"
               class="w-9 sm:w-16 2xl:w-18"
             />
             GitHub
- 
-     </a>
+          </a>
 
-
-          <a href="https://www.linkedin.com/in/sandrine-chateauneuf-1242aa402/"  target="_blank"
-            class="flex flex-col items-center font-amatic-sc text-xl w-full sm:text-2xl 2xl:text-5xl font-bold
-             text-pink-700 gap-3 shadow-xl px-9 sm:px-16 py-3.5 lg:py-16 
-             bg-white/15 backdrop-blur-xs rounded-md border border-white/30 text-center 
-             justify-between lg:w-1/3 hover:scale-105 hover:bg-white/25 transition duration-300"
+          <a
+            href="https://www.linkedin.com/in/sandrine-chateauneuf-1242aa402/"
+            target="_blank"
+            class="flex flex-col items-center font-amatic-sc text-xl w-full sm:text-2xl 2xl:text-5xl font-bold text-pink-700 gap-3 shadow-xl px-9 sm:px-16 py-3.5 lg:py-16 bg-white/15 backdrop-blur-xs rounded-md border border-white/30 text-center justify-between lg:w-1/3 hover:scale-105 hover:bg-white/25 transition duration-300"
           >
-       
             <img
               src="./assets/images/logo-linkedin-effet-gradient-3d.png"
               alt="LinkedIn"
@@ -1353,10 +1333,6 @@
             />
             LinkedIn
           </a>
-
-
-
-
         </div>
       </section>
 

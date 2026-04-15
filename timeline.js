@@ -157,7 +157,7 @@ requestAnimationFrame(() => {
     // x: getEndX,
     ease: "none",
     scrollTrigger: {
-      trigger: "#tl-section",
+      trigger: "#tl-wrap",
       start: "top top",
       end: () => "+=" + (track.scrollWidth - wrap.clientWidth),
       pin: true,
